@@ -16,7 +16,7 @@ This text comes from _______________ !
 
 int main()
 {
-
+  rand(5);
   return 0;
   
 }
