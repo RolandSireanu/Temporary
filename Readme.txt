@@ -17,6 +17,7 @@ This text comes from _______________ !
 int main()
 {
 printf("Hello world ! ");
+  rand(5);
   return 0;
   
 }
