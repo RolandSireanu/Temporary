@@ -1,0 +1,17 @@
+
+*Fetching all the changes(from all branches) from a remote repo (named "origin") 
+	git fetch origin
+
+*Fetching all changes from a specific branch inside remote repo (named "origin")
+	git fetch origin MyBranch
+
+*Compare working directory with remote branch origin/MyBranch 
+	git diff origin/MyBranch 
+
+*You want to sync your local repo with a remote one 
+	https://www.atlassian.com/git/tutorials/syncing
+
+*Push a new created branch to remote repo (named "origin")
+	git push origin MyBranch 
+
+
