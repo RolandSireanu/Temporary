@@ -1,0 +1,17 @@
+#Attach to a running container
+  export LANG=C
+  sudo docker inspect 4130f2c6411e | grep pid
+  nsenter -m -u -n -p -i -t  452261 /bin/bash
+
+#Build image from Dockerfile 
+  sudo docker build -t nginx:tagNginx .
+  //nginx = choose an image name 
+  //tagNginx = just a tag 
+  // . = place where Dockerfile resides
+  
+#Port mapping
+  sudo docker run -p 8080:8080 -p 50000:50000 jenkins 
+
+#Mapping volumes between host and container
+  sudo docker run -d -v /home/sireanuroland/Works/WebDevelopment/PhpProject/www/:/var/www/site \ 
+  -p 8080:80 mysite
