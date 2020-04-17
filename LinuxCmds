@@ -1,0 +1,6 @@
+#List all running services
+systemctl list-units --type=service
+
+#Kill PID
+sudo kill -9 PID
+
