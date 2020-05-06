@@ -1,0 +1,9 @@
+To be able to access your files you have to decrypt them first
+
+cryptsetup open /dev/sda1 backup
+where sda1 is the encrypted partition and backup is the name of your partition (that is a very basic command, you can fix it according to your needs). Then type your password, and proceed to mount that unencrypted using
+
+mount /dev/mapper/backup /mnt
+Done! now visit the mounted partition
+
+cd /mnt/backup
