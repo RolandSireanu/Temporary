@@ -7,3 +7,6 @@ mount /dev/mapper/backup /mnt
 Done! now visit the mounted partition
 
 cd /mnt/backup
+
+============== Open LVM partition ===== 
+https://www.svennd.be/mount-unknown-filesystem-type-lvm2_member/
